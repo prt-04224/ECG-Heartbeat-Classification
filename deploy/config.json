@@ -1,0 +1,45 @@
+{
+  "class_names": [
+    "N",
+    "S",
+    "V",
+    "F"
+  ],
+  "fs": 360,
+  "before": 72,
+  "after": 144,
+  "seg_len": 216,
+  "bandpass_hz": [
+    0.5,
+    40.0
+  ],
+  "bandpass_order": 4,
+  "record_norm": "(x - median) / std, then clip to +-10",
+  "rr_features": [
+    "pre_rr",
+    "post_rr",
+    "pre_rr/local_avg",
+    "post_rr/local_avg"
+  ],
+  "rr_clip": {
+    "interval_s": [
+      0.2,
+      3.0
+    ],
+    "ratio": [
+      0.0,
+      5.0
+    ]
+  },
+  "local_rr_beats": 10,
+  "use_calibration": true,
+  "test_metrics": {
+    "acc": 0.9513904270957089,
+    "bal_acc": 0.6402468151164868,
+    "macroF1": 0.6446605486989629,
+    "F1_N": 0.9743792146868445,
+    "F1_S": 0.6813700051894136,
+    "F1_V": 0.8982016168949019,
+    "F1_F": 0.024691358024691357
+  }
+}
